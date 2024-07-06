@@ -64,6 +64,7 @@
         packages = [pkgs.pyenv pkgs.curl pkgs.cacert];
         # Setup pyenv
         shellHook = ''
+	  PS1='[nix shell]\$ '
           eval "$(pyenv init -)"
         '';
       };
